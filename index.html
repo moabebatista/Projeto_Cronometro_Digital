@@ -1,71 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cronômetro</title>
-</head>
-<style>
-    *{
-        margin: 0 auto;
-        padding: 0;
-    }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="cron.js" defer> </script>
+        <link rel="stylesheet" href="style.css">
+        <title>Cronômetro</title>
+    </head>
 
-    body {
-        background-color: #111;
-    }
-
-    .max-width {
-        max-width: 500px;
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-        margin-top: 10%;
-        background-color: #FFF;
-        box-shadow: 0 0 5px #FFF;
-        border-radius: 25px;
-        text-align: center;
-    }
-
-    h1 {
-        font-family: 'Courier New', Courier, monospace;
-        margin-top: 20px;
-    }
-
-    button {
-        padding: 10px;
-        border: none;
-        font-family: 'segoe UI';
-        font-size: 1.1em;
-        transition: all .5s;
-        cursor: pointer;
-        border-radius: 25px;
-    }
-
-    button:hover {
-        background-color: #a1c0d1;
-    }
-
-    .bg-green {
-        background-color: #90f35b;
-    }
-
-    .bg-yellow {
-        background-color: #ece91c;
-    }
-
-    .bg-red {
-        background-color: #ee3636e0;
-    }
-</style>
-<body>
-    
-    <div class="max-width">
-        <button onclick="start();" class="bg-green">Iniciar</button>
-        <button onclick="pause()" class="bg-yellow">Pausar</button>
-        <button onclick="stop()" class="bg-red">Zerar</button>
-        <h1 id="counter">00:00:00</h1>
-    </div>
-<script src="cron.js"> </script>
-</body>
+    <body>
+        <div class="max-width">
+            <button onclick="start();" class="bg-green">Iniciar</button>
+            <button onclick="pause()" class="bg-yellow">Pausar</button>
+            <button onclick="stop()" class="bg-red">Zerar</button>
+            <h1 id="counter">00:00:00</h1>
+        </div>
+    </body>
 </html>
